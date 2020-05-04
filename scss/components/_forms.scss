@@ -1,0 +1,13 @@
+/*@abdulrahmanAbutair_mainStyle*/
+////////////////////////////////////////
+
+.form {}
+.form-group{margin-bottom:  1.6rem}
+input{
+  &:focus {
+  }
+}
+.input {
+  &::placeholder {
+  }
+}

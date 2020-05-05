@@ -1,11 +1,14 @@
 /*@abdulrahmanAbutair_mainStyle*/
 ////////////////////////////////////////
 
-// Required
+// full...
 //@import "../node_modules/bootstrap/scss/bootstrap";
-//@import "../node_modules/bootstrap/scss/functions";
-//@import "../node_modules/bootstrap/scss/variables";
-//@import "../node_modules/bootstrap/scss/mixins";
+
+// custom...
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
 //@import "../node_modules/bootstrap/scss/utilities/clearfix";
 //@import "../node_modules/bootstrap/scss/utilities/display";
 
@@ -48,6 +51,7 @@
 
 ///////////////////////////////////////////////////////////
 // Utils
+
 @import "abstracts/variables";
 @import "abstracts/translate";
 @import "abstracts/function";
@@ -63,6 +67,7 @@
 
 
 // Base
+//@import "base/animation";
 @import "base/fonts";
 @import "base/reset";
 @import "base/typography";
@@ -72,10 +77,15 @@
 @import "themes/default";
 
 // Components
+//@import "components/accordion";
 @import "components/buttons";
-@import "components/carousel";
-@import "components/lists";
+//@import "components/carousels";
+//@import "components/dropdowns";
 @import "components/forms";
+@import "components/lists";
+//@import "components/intro-grid";
+//@import "components/nav";
+//@import "components/side-nav";
 
 
 // Layout
@@ -89,3 +99,7 @@
 @import "pages/index";
 @import "pages/internals";
 
+
+
+//@import "abstracts/responsive-index";
+//@import "abstracts/responsive-internals";

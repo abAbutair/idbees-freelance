@@ -1,0 +1,33 @@
+{
+  "name": "idbees55-new",
+  "version": "1.0.0",
+  "description": "idbees-project_freelance",
+  "main": "index.js",
+  "scripts": {
+    "compile:scss_ltr": "node-sass --output-style compressed --source-map true --source-map-contents true scss/main.scss css/style_ltr.css -w",
+    "compile:scss_rtl": "node-sass --output-style compressed --source-map true --source-map-contents true scss/main.scss css/style_rtl.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/abdulrahman-abutair/idbees55-new.git"
+  },
+  "keywords": [
+    "idbees"
+  ],
+  "author": "Abdulrahman Abutair",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/abdulrahman-abutair/idbees55-new/issues"
+  },
+  "homepage": "https://gitlab.com/abdulrahman-abutair/idbees55-new#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.0",
+    "popper.js": "^1.16.1",
+    "select2": "^4.0.13"
+  }
+}

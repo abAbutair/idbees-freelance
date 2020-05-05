@@ -22,21 +22,170 @@
 </head>
 <body>
 
+<!-- Header -->
 <header>
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top__inner">
+                <div class="logo">
+                    <img src="https://idbees77.entej.com/assets/images/logo/idbees-logo.png" alt="idbees Logo">
+                </div>
+                <div class="register-lang">
+                    <ul class="d-flex">
+                        <li>
+                            <div class="dropdown dropdown--header">
+                                <button class="btn btn--dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-plus-circle"></i>
+                                    <span>new id it's free</span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="btn btn--dark" href="#">company</a>
+                                    <a class="btn btn--default" href="#">person</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- Button trigger Login modal -->
+                            <button type="button" class="btn btn--transparent" data-toggle="modal" data-target="#exampleModal">
+                                <i class="fas fa-lock"></i>
+                                <span>login</span>
+                            </button>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn--transparent">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>egypt</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn--transparent">
+                                <i class="fas fa-language"></i>
+                                <span>العربية</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <div class="header-bottom__inner">
+                <nav class="navbar">
+                    <div class="collapse-nav" id="navbarSupportedContent">
+                        <ul class="navbar__nav">
+                            <li class="nav-item">
+                                <a class="nav-link link link--mainClr" href="#">websites directory</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link link--mainClr" href="#">buy & sell</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link link--mainClr" href="#">ID'S</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar__nav">
+                            <li class="nav-item">
+                                <a class="nav-link btn btn--green" href="#">
+                                    <i class="fas fa-plus-circle"></i>
+                                    <span>add your website</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn--default" href="#">
+                                    <i class="fas fa-plus-circle"></i>
+                                    <span>add your product</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
 </header>
+<!-- End of Header -->
 
+<!-- Main Content -->
 <main></main>
+<!-- End of Main Content -->
 
+<!-- Footer -->
 <footer></footer>
+<!-- End of Footer -->
+
+<!-- Modals -->
+<!-- Login Modal -->
+<div class="login-modal modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Login IDbees</h5>
+                <button type="button" class="close btn btn--default" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" class="form">
+                    <!-- to trigger validation Error message put class 'validated' to form__element div -->
+                    <h5 class="modal-heading">login</h5>
+                    <div class="form__element labeled validated">
+                        <label for="userName">user name</label>
+                        <div class="field-with-icn labeled__field">
+                            <input type="text" class="input" placeholder="user name" id="userName">
+                            <span class="field-with-icn__icon"><i class="fas fa-user"></i></span>
+                        </div>
+<!--                        <div class="validated-tooltip">-->
+<!--                            Please provide a valid-->
+<!--                        </div>-->
+                    </div>
+                    <div class="form__element labeled validated">
+                        <label for="password">password</label>
+                        <div class="field-with-icn labeled__field">
+                            <input type="password" class="input" placeholder="password" id="password">
+                            <span class="field-with-icn__icon"><i class="fas fa-lock"></i></span>
+                        </div>
+<!--                        <div class="validated-tooltip">-->
+<!--                            Please provide a valid-->
+<!--                        </div>-->
+                    </div>
+                    <div class="form__element alignment-margin validated">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">remember me</label>
+                        </div>
+<!--                        <div class="validated-tooltip">-->
+<!--                            Please provide a valid-->
+<!--                        </div>-->
+                    </div>
+                    <div class="form__element alignment-margin">
+                        <button type="submit" class="btn btn--default">login</button>
+                    </div>
+                    <div class="form__element alignment-margin">
+                        <a href="#" class="link link--mainClr"> forgot your password?</a>
+                    </div>
+                </form>
+                <p class="modal-footing">Don't have an account yet? <a href="#" class="link link--blue">new company ID</a> or <a href="#" class="link link--blue">new user ID</a> now</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Modals -->
 
 <!-- core scripts -->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
-<script src="node_modules/popper.js/dist/popper.js"></script>
+<!--<script src="node_modules/popper.js/dist/popper.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
-<!-- page plugins scripts -->
+<!-- Custom bootstrap scripts -->
+<script src="node_modules/bootstrap/js/dist/util.js"></script>
+<script src="node_modules/bootstrap/js/dist/modal.js"></script>
+<script src="node_modules/bootstrap/js/dist/dropdown.js"></script>
+
+<!-- Page plugins scripts -->
 <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
 
-<!-- MAiN scripts -->
+<!-- Main scripts -->
 <script src="js/mainScript.js"></script>
 
 </body>

@@ -6,21 +6,23 @@
 }
 %covered_bg {
     width: 100%;
-    position: relative;
     background-size: cover;
     background-position: center center;
 }
-%flex-wrap{
+%d-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+}
+%flex-wrap{
     flex-wrap: wrap;
 }
 %flex-center {
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 %flex-flow {
-    display: flex;
     flex-flow: column;
     justify-content: center;
 }
@@ -46,3 +48,35 @@
     background-repeat: no-repeat;
     background-size: auto 90%;
 }
+%prevent-selection{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+//%box-hover{
+//    box-shadow:0 3px 10px -2px rgba($offerClr,.7);
+//    @include translate(0, -.3rem)
+//}
+//%double-angel{
+//    @include fontAwesome("Font Awesome 5 Free",$double-right,null,900,null); // plz replace all arrows to this (becouse of arabic)
+//}
+//%long-arrow{
+//    @include fontAwesome("Font Awesome 5 Free",$long-arrow-right,null,900,null);
+//}
+//%content-nav{
+//    color:$bodyFontClr;
+//    margin-top: 2rem;
+//    margin-bottom: 1rem;
+//    font-weight: bold;
+//    @include transition(color,.4s);
+//    &:before{
+//        margin-#{$right}: 1rem;
+//        @extend %double-angel;
+//    }
+//    &:hover{
+//        color: $orange;
+//    }
+//}

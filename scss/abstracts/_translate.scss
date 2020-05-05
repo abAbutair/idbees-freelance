@@ -16,11 +16,11 @@ $double-left: "\f100";
 $chevron-left:"\f053";
 $chevron-right:"\f054";
 
-//font family ------
-$bodyFont: 'roboto-reg';
-$boldFont: 'roboto-bold';
-$semiBoldFont: 'roboto-semi';
-$medFont: 'roboto-med';
+////font family ------
+//$bodyFont: 'roboto-reg';
+//$boldFont: 'roboto-bold';
+//$semiBoldFont: 'roboto-semi';
+//$medFont: 'roboto-med';
 
 /*------ The Switch ------*/
 @if $isRtl == rtl
@@ -36,11 +36,11 @@ $medFont: 'roboto-med';
     $chevron-left:"\f054";
     $chevron-right:"\f053";
 
-    //font family ------
-    $bodyFont: 'messiri-reg';
-    $boldFont: 'messiri-bold';
-    $semiBoldFont: 'messiri-semi';
-    $medFont: 'messiri-med';
+    ////font family ------
+    //$bodyFont: 'messiri-reg';
+    //$boldFont: 'messiri-bold';
+    //$semiBoldFont: 'messiri-semi';
+    //$medFont: 'messiri-med';
 
 }
 @else {
@@ -56,9 +56,9 @@ $medFont: 'roboto-med';
     $chevron-right:"\f054";
 
 
-    //font family ------
-    $bodyFont: 'roboto-reg';
-    $boldFont: 'roboto-bold';
-    $semiBoldFont: 'roboto-semi';
-    $medFont: 'roboto-med';
+    ////font family ------
+    //$bodyFont: 'roboto-reg';
+    //$boldFont: 'roboto-bold';
+    //$semiBoldFont: 'roboto-semi';
+    //$medFont: 'roboto-med';
 }

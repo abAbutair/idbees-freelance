@@ -1,2 +1,70 @@
 /*@abdulrahmanAbutair_mainStyle*/
 ////////////////////////////////////////
+.header-top {
+  &__inner {
+    @extend %d-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+}
+.register-lang {
+  ul {
+    li {
+      .btn {
+        &:hover {
+          color: $mainClr;
+        }
+        &--dark {
+          &:hover {
+            color: $whiteFontClr;
+          }
+        }
+      }
+      &:not(:last-child) {
+        margin-#{$right}: 1rem;
+      }
+      i {
+        margin-#{$right}: .5rem;
+      }
+    }
+  }
+}
+
+.header-bottom {
+  background-color: $secondClr;
+  &__inner {
+    padding: 1rem 0;
+  }
+}
+.navbar {
+  &__nav {
+    @extend %d-flex;
+    align-items: center;
+    .nav-item {
+      &:not(:last-child) {
+        margin-#{$right}: 1rem;
+      }
+    }
+  }
+  .nav-link {
+    padding: 1rem 1.2rem;
+    font-size: $smallFontSize;
+    &.link {
+      text-transform: uppercase;
+      font-weight: bold;
+      &:hover {
+        color: $whiteFontClr;
+      }
+    }
+    &.btn {
+      &:hover {
+        color: $scdFontClr;
+      }
+    }
+  }
+}
+.collapse-nav {
+  @extend %d-flex;
+  justify-content: space-between;
+}

@@ -22,23 +22,23 @@
 //@import "../node_modules/bootstrap/scss/carousel";
 //@import "../node_modules/bootstrap/scss/close";
 //@import "../node_modules/bootstrap/scss/code";
-//@import "../node_modules/bootstrap/scss/custom-forms";
-//@import "../node_modules/bootstrap/scss/dropdown";
+@import "../node_modules/bootstrap/scss/custom-forms";
+@import "../node_modules/bootstrap/scss/dropdown";
 //@import "../node_modules/bootstrap/scss/forms";
-//@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/grid";
 //@import "../node_modules/bootstrap/scss/images";
 //@import "../node_modules/bootstrap/scss/input-group";
 //@import "../node_modules/bootstrap/scss/jumbotron";
 //@import "../node_modules/bootstrap/scss/list-group";
 //@import "../node_modules/bootstrap/scss/media";
-//@import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/modal";
 //@import "../node_modules/bootstrap/scss/nav";
 //@import "../node_modules/bootstrap/scss/navbar";
 //@import "../node_modules/bootstrap/scss/pagination";
 //@import "../node_modules/bootstrap/scss/popover";
 //@import "../node_modules/bootstrap/scss/print";
 //@import "../node_modules/bootstrap/scss/progress";
-//@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/reboot";
 //@import "../node_modules/bootstrap/scss/root";
 //@import "../node_modules/bootstrap/scss/spinners";
 //@import "../node_modules/bootstrap/scss/tables";
@@ -51,12 +51,12 @@
 
 ///////////////////////////////////////////////////////////
 // Utils
-
 @import "abstracts/variables";
 @import "abstracts/translate";
 @import "abstracts/function";
 @import "abstracts/mixins";
 @import "abstracts/partials";
+
 
 
 // Vendors
@@ -78,15 +78,15 @@
 
 // Components
 //@import "components/accordion";
-@import "components/buttons";
+@import "components/buttons-links";
 //@import "components/carousels";
-//@import "components/dropdowns";
+@import "components/dropdown";
 @import "components/forms";
 @import "components/lists";
+@import "components/modals";
 //@import "components/intro-grid";
 //@import "components/nav";
 //@import "components/side-nav";
-
 
 // Layout
 @import "layout/container";
@@ -99,7 +99,5 @@
 @import "pages/index";
 @import "pages/internals";
 
-
-
-//@import "abstracts/responsive-index";
-//@import "abstracts/responsive-internals";
+// responsive
+@import "abstracts/responsive";

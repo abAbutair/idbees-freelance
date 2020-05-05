@@ -1,0 +1,63 @@
+/*@abdulrahmanAbutair_mainStyle*/
+////////////////////////////////////////
+
+.btn {
+  padding: 1rem 1rem;
+  text-transform: uppercase;
+  font-size: $smallFontSize;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid $grayFontClr;
+  color: $grayFontClr;
+  @include border-radius(0.3rem);
+  @include transition(all, 0.2s);
+  &:focus {
+    box-shadow: none;
+    outline: 5px auto $mainClr;
+  }
+  &--default {
+    background-color: $mainClr;
+    border: 1px solid $mainClr;
+    color: $whiteFontClr;
+  }
+  &--dark {
+    background-color: $secondClr;
+    border: 1px solid $secondClr;
+    color: $mainClr;
+  }
+  &--transparent {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: $scdFontClr;
+    i {
+      color: $mainClr;
+    }
+  }
+  &--green {
+    background-color: $greenBtn;
+    border: 1px solid $greenBtn;
+    color: $whiteFontClr;
+  }
+}
+
+.link {
+  font-size: $bodyFontSize;
+  @include transition(all, 0.2s);
+  &--default {
+    color: $bodyFontClr;
+  }
+  &--mainClr {
+    color: $mainClr;
+  }
+  &--blue {
+    color: lighten($linkHoverFontClr, 30%);
+  }
+  &:hover {
+    color: $linkHoverFontClr;
+  }
+}
+
+
+
+
+

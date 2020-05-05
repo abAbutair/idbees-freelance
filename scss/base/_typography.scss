@@ -1,17 +1,21 @@
 /*@abdulrahmanAbutair_mainStyle*/
 ////////////////////////////////////////
-
-:root {
-  --h: 1.6rem;
-}
 body {
-  font-family: $bodyFont;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   //line-height: var(--h);
   color: $bodyFontClr;
   font-size: $bodyFontSize;
-  word-spacing: 0.3rem;
+  //word-spacing: 0.15rem;
   text-align: $left;
+}
+i {
+  margin-#{$right}: 0.5rem;
+}
+a {
+  &:hover {
+    text-decoration: none;
+  }
 }
 .heading-primary {}
 .heading-secondary {}

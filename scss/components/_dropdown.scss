@@ -1,0 +1,43 @@
+///* bootstrap hover dropdown */
+//.dropdown:hover>.dropdown-menu {
+//  display: block;
+//}
+//
+//.dropdown>.dropdown-toggle:active {
+//  /*Without this, clicking will make it sticky*/
+//  pointer-events: none;
+//}
+/****************************************/
+.dropdown {
+  &--header {
+    .dropdown-toggle {
+      &[aria-expanded='true'] {
+        background-color: $dropdownBG;
+        border: 1px solid $dropdownBG;
+        color: $scdFontClr !important;
+      }
+    }
+    .dropdown-menu {
+      width: 100%;
+      padding: 1rem;
+      background-color: $dropdownBG;
+
+      a {
+        display: block;
+        font-size: $tinyFontSize;
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+        &:hover {
+          &.btn--dark {
+            color: $whiteFontClr;
+          }
+          &.btn--default {
+            color: $scdFontClr;
+          }
+        }
+      }
+    }
+  }
+}
+

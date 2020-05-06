@@ -1,0 +1,96 @@
+#introCarousel {
+
+  .form {
+    &__element {
+      margin-bottom: 0;
+      width: 100%;
+      label {
+        color: $scdMainClr;
+        font-size: $smallFontSize;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        text-transform: capitalize;
+      }
+      .select2-container--default .custom-container .select2-selection__rendered, .select2-container--default .select2-selection--single .select2-selection__placeholder {
+        color: $scdMainClr;
+      }
+      .input {
+        @include placeHolder {
+          color: $scdMainClr;
+        }
+      }
+      .btn {
+        width: 100%;
+      }
+    }
+    &--intro {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      z-index: 9;
+      margin-bottom: 3rem;
+      &__row {
+        @extend %d-flex;
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+      }
+      &__col {
+        width: 20%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        @extend %d-flex;
+        align-items: flex-end;
+      }
+    }
+  }
+  .carousel-item {
+    height: 500px;
+    &:after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+    }
+  }
+  .carousel-caption {
+    left: 0;
+    right: 0;
+    bottom: auto;
+    top: 30%;
+    color: $mainClr;
+    font-size: $teraHeading;
+    font-weight: 600;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    visibility: hidden;
+    width: 5rem;
+    height: 5rem;
+    background-color: $secondClr;
+    @include border-radius(50%);
+    top: 50%;
+    @include translate(0, -50%);
+    &:hover, &:focus {
+      background-color: $mainClr;
+    }
+  }
+  .carousel-control-next {
+    right: 3%;
+  }
+  .carousel-control-prev {
+    left: 3%;
+  }
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  &:hover {
+    .carousel-control-prev, .carousel-control-next {
+      visibility: visible;
+    }
+  }
+
+}

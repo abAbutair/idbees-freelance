@@ -11,6 +11,7 @@
     <!-- Bootstrap & Plugins -->
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style_ltr.css">
@@ -107,7 +108,99 @@
 <!-- End of Header -->
 
 <!-- Main Content -->
-<main></main>
+<main>
+    <section class="section">
+        <div id="introCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url(http://idbees77.entej.com/assets/images/slider/idbees-02.jpg)">
+                    <div class="carousel-caption d-none d-md-block wow fadeInDown" data-wow-duration="1s">
+                        <div class="container">
+                            <h5>Directory and personal cards</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url(http://idbees77.entej.com/assets/images/slider/idbees-01.jpg)">
+                    <div class="carousel-caption d-none d-md-block wow fadeInRight" data-wow-duration="1s">
+                        <div class="container">
+                            <h5>Directory and person</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+            <form action="" class="form form--intro">
+                <div class="container">
+                    <div class="form--intro__row">
+                        <div class="form--intro__col">
+                            <div class="form__element validated">
+                                <label for="search">search about</label>
+                                <input type="text" class="input" placeholder="search ..." id="search">
+                                <!--                        <div class="validated-tooltip">-->
+                                <!--                            Please provide a valid-->
+                                <!--                        </div>-->
+                            </div>
+                        </div>
+                        <div class="form--intro__col">
+                            <div class="form__element validated">
+                                <label for="search">search in service</label>
+                                <select class="services" name="services">
+                                    <option value="0"></option>
+                                    <option value="articles">articles</option>
+                                    <option value="cards">cards</option>
+                                    <option value="our business">our business</option>
+                                    <option value="products">products</option>
+                                    <option value="sites">sites</option>
+                                </select>
+
+                                <!--                        <div class="validated-tooltip">-->
+                                <!--                            Please provide a valid-->
+                                <!--                        </div>-->
+                            </div>
+                        </div>
+                        <div class="form--intro__col">
+                            <div class="form__element validated">
+                                <label for="search">city</label>
+                                <select class="city" name="city">
+                                    <option value="0"></option>
+                                    <option value="advertise">alexandria</option>
+                                    <option value="articles">aswan</option>
+                                    <option value="cards">cairo</option>
+                                    <option value="our business">luxor</option>
+                                </select>
+
+                                <!--                        <div class="validated-tooltip">-->
+                                <!--                            Please provide a valid-->
+                                <!--                        </div>-->
+                            </div>
+                        </div>
+                        <div class="form--intro__col">
+                            <div class="form__element validated">
+                                <label for="search">district</label>
+                                <select class="services" name="services">
+                                    <option value="0"></option>
+                                    <option value="advertise">advertise</option>
+                                </select>
+                                <!--                        <div class="validated-tooltip">-->
+                                <!--                            Please provide a valid-->
+                                <!--                        </div>-->
+                            </div>
+                        </div>
+                        <div class="form--intro__col">
+                            <div class="form__element">
+                                <button type="submit" class="btn btn--default">search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
 <!-- End of Main Content -->
 
 <!-- Footer -->
@@ -264,9 +357,42 @@
 <script src="node_modules/bootstrap/js/dist/util.js"></script>
 <script src="node_modules/bootstrap/js/dist/modal.js"></script>
 <script src="node_modules/bootstrap/js/dist/dropdown.js"></script>
+<script src="node_modules/bootstrap/js/dist/carousel.js"></script>
 
 <!-- Page plugins scripts -->
 <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
+<script src="node_modules/wowjs/dist/wow.min.js"></script>
+
+<!-- init scripts -->
+<script>
+    $(document).ready(function () {
+        $('.services').select2({
+            placeholder: {
+                id: '0', // the value of the option
+                text: 'Select an option'
+            },
+            minimumResultsForSearch: -1,
+            dropdownAutoWidth: true,
+            width: '100%',
+            containerCssClass: "custom-container",
+            dropdownCssClass: "custom-dropdown",
+        });
+        $('.city').select2({
+            placeholder: {
+                id: '0', // the value of the option
+                text: 'choose city'
+            },
+            minimumResultsForSearch: -1,
+            dropdownAutoWidth: true,
+            width: '100%',
+            containerCssClass: "custom-container",
+            dropdownCssClass: "custom-dropdown",
+        });
+    });
+</script>
+<script>
+    new WOW().init();
+</script>
 
 <!-- Main scripts -->
 <script src="js/mainScript.js"></script>

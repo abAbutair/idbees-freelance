@@ -19,7 +19,7 @@
 //@import "../node_modules/bootstrap/scss/button-group";
 //@import "../node_modules/bootstrap/scss/buttons";
 //@import "../node_modules/bootstrap/scss/card";
-//@import "../node_modules/bootstrap/scss/carousel";
+@import "../node_modules/bootstrap/scss/carousel";
 //@import "../node_modules/bootstrap/scss/close";
 //@import "../node_modules/bootstrap/scss/code";
 @import "../node_modules/bootstrap/scss/custom-forms";
@@ -79,7 +79,7 @@
 // Components
 //@import "components/accordion";
 @import "components/buttons-links";
-//@import "components/carousels";
+@import "components/carousel";
 @import "components/dropdown";
 @import "components/forms";
 @import "components/lists";

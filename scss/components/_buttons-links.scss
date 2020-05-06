@@ -55,6 +55,14 @@
   &:hover {
     color: $linkHoverFontClr;
   }
+  &--read-more {
+    &:after {
+      content: $long-arrow-right;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      margin-#{$left}: 1rem;
+    }
+  }
 }
 
 

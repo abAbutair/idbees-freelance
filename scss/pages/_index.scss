@@ -1,2 +1,15 @@
 /*@abdulrahmanAbutair_mainStyle*/
 ////////////////////////////////////////
+.section-header {
+  @extend %d-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  border-bottom: 0.2rem solid $mainClr;
+  h2 {
+    //margin-bottom: ;
+  }
+  .btn {
+    @include border-radius(0);
+  }
+}

@@ -6,3 +6,8 @@ p{
 }
 .u-center-text {text-align: center}
 .d-flex{@extend %d-flex}
+.section {
+    &--padding {
+        padding: $secPadding 0;
+    }
+}

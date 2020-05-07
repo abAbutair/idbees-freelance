@@ -92,5 +92,137 @@
       visibility: visible;
     }
   }
+}
 
+
+/* OWL Carousel */
+.owl-carousel {
+  .owl-nav {
+    margin: 2rem 0.5rem 0;
+    @extend %d-flex;
+    button {
+      &.owl-next, &.owl-prev {
+        background-color: $dropdownBG;
+        width: 3rem;
+        height: 3rem;
+        @extend %d-flex;
+        align-items: center;
+        justify-content: center;
+        &:after {
+          font-weight: 900;
+          font-family: "Font Awesome 5 Free";
+          line-height: 1rem;
+          font-size: $headingPrimary;
+        }
+        &:focus {
+          outline-color: $secondClr;
+        }
+        &:hover {
+          background-color: $secondClr;
+          color: $whiteFontClr;
+        }
+      }
+      &.owl-next {
+        background-color: $dropdownBG;
+        color: $scdMainClr;
+        &:after {
+          content: $angel-right;
+        }
+      }
+      &.owl-prev {
+        background-color: $scdMainClr;
+        color: $whiteFontClr;
+        &:after {
+          content: $angel-left;
+        }
+      }
+    }
+  }
+}
+
+.featured-cards {
+  color: $whiteFontClr;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  padding: 1.2rem;
+  @extend %d-flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-size: cover;
+  background-position: center center;
+  &__list {
+    width: calc(100% - 5rem - 1rem);
+    margin-right: 1rem;
+    .card-heading {
+      color: $mainClr;
+      font-weight: 900;
+    }
+    li {
+      @extend %d-flex;
+      align-items: center;
+      &:not(:last-of-type) {
+        margin-bottom: 0.6rem;
+      }
+      [class^='card-'] {
+        color: $whiteFontClr;
+        font-size: $smallFontSize;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        &.card-heading {
+          color: $mainClr;
+          font-weight: 900;
+        }
+      }
+      .card-link {
+        @include transition(transform, 0.2s);
+        &:hover {
+          color: $mainClr;
+          @include scale(1.05, 1.05);
+        }
+      }
+    }
+  }
+  &__img {
+    position: absolute;
+    top: 10%;
+    #{$right}: 1.5rem;
+  }
+}
+.circle-img {
+  width: 5rem;
+  height: 50px;
+  @include border-radius(50%);
+  margin: 0 auto 1rem;
+  overflow: hidden;
+  @extend %d-flex;
+}
+.share-div {
+  @extend %d-flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  .btn {
+    border: none;
+    padding: 0.4rem;
+    @extend %d-flex;
+    justify-content: center;
+    align-items: center;
+    color: $whiteFontClr;
+    i {
+      font-size: $bodyFontSize;
+      margin: 0;
+    }
+    &:not(:last-child) {
+      margin-#{$right}: 0.8rem;
+    }
+    &.favourite {
+      &:hover {
+        i {
+          &:before {
+            font-weight: 900;
+          }
+        }
+      }
+    }
+  }
 }

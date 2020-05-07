@@ -17,5 +17,9 @@ a {
     text-decoration: none;
   }
 }
-.heading-primary {}
+.heading-primary {
+  color: $scdFontClr;
+  font-size: $headingPrimary;
+  font-weight: 300;
+}
 .heading-secondary {}

@@ -49,6 +49,12 @@
   &--mainClr {
     color: $mainClr;
   }
+  &--black {
+    color: $scdFontClr;
+    &:hover {
+      color: $mainClr!important;
+    }
+  }
   &--blue {
     color: lighten($linkHoverFontClr, 30%);
   }

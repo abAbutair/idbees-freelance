@@ -205,13 +205,14 @@
     &:not(:last-child) {
       margin-#{$right}: 0.8rem;
     }
-    &.favourite {
-      &:hover {
-        i {
-          &:before {
-            font-weight: 900;
-          }
-        }
+  }
+}
+
+.favourite {
+  &:hover {
+    i {
+      &:before {
+        font-weight: 900;
       }
     }
   }

@@ -310,33 +310,6 @@
       font-size: $tinyFontSize;
     }
   }
-  &__btn {
-    @extend %d-flex;
-    justify-content: center;
-    align-items: center;
-    .btn {
-      padding: 1rem 3rem;
-    }
-  }
-  //&__hide {
-  //  visibility: hidden;
-  //  height: 0;
-  //  opacity: 0;
-  //  @include transition(all, .3s);
-  //}
-  > .row > [class^="col-"] {
-    &:not(:nth-child(-n+8)) {
-      visibility: hidden;
-      height: 0;
-      opacity: 0;
-      @include transition(all, .3s);
-    }
-  }
-  &__visible {
-    visibility: visible !important;
-    height: 9.5rem !important;
-    opacity: 1 !important;
-  }
 }
 
 /***************************************/
@@ -410,5 +383,88 @@
     justify-content: center;
     align-items: center;
     @include border-radius(.3rem)
+  }
+}
+.grid-to-hide {
+  > .row > [class^="col-"] {
+    &:not(:nth-child(-n+8)) {
+      visibility: hidden;
+      height: 0;
+      opacity: 0;
+      @include transition(all, .3s);
+    }
+  }
+  &__visible {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  &__btn {
+    @extend %d-flex;
+    justify-content: center;
+    align-items: center;
+    .btn {
+      padding: 1rem 3rem;
+    }
+  }
+}
+
+/***************************************/
+
+.products {
+  &__inner {
+    border: 1px solid $dropdownBG;
+    margin-bottom: 3rem;
+    &:hover {
+      .products__dis {
+        background-color: $productHover;
+      }
+    }
+  }
+  &__img {
+    background-size: cover;
+    background-position: center center;
+    padding-top: 70%;
+    display: block;
+  }
+  &__dis {
+    @include transition(background-color, 0.3s);
+    padding: 2rem 1.5rem 1.5rem;
+    position: relative;
+    > * {
+      &:not(:last-child) {
+        margin-bottom: .7rem;
+      }
+    }
+    .name {
+      font-weight: 300;
+      text-transform: capitalize;
+      a {
+        font-size: $medFontSize;
+      }
+    }
+    p, a {
+      font-size: $tinyFontSize;
+      margin: 0;
+    }
+    .location {
+      strong {
+        color: $mainClr;
+      }
+    }
+    .favourite {
+      position: absolute;
+      padding: 0.2rem;
+      bottom: 1.5rem;
+      #{$right}: 1.5rem;
+      color: $mainClr;
+      border: none;
+      margin: 0;
+      i {
+        margin: 0;
+      }
+    }
+    .price {
+      font-size: $headingPrimary;
+    }
   }
 }

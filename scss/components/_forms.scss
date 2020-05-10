@@ -4,6 +4,34 @@
   &__element {
     margin-bottom: 1.5rem;
   }
+  &--intro {
+    margin-bottom: 3rem;
+    .form__element {
+      width: 100%;
+      margin-bottom: 0;
+    }
+    label {
+      text-transform: capitalize;
+      font-size: $smallFontSize;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    &__row {
+      @extend %d-flex;
+      margin-left: -1.5rem;
+      margin-right: -1.5rem;
+    }
+    &__col {
+      width: 20%;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      @extend %d-flex;
+      align-items: flex-end;
+    }
+    .btn {
+      width: 100%;
+    }
+  }
 }
 .input, .select2-container--default .custom-container , .select2-container--default .select2-selection--multiple{
   height: $formElementHeight;

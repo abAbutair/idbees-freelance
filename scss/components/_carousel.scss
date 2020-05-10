@@ -6,10 +6,6 @@
       width: 100%;
       label {
         color: $scdMainClr;
-        font-size: $smallFontSize;
-        font-weight: bold;
-        margin-bottom: 0.5rem;
-        text-transform: capitalize;
       }
       .select2-container--default .custom-container .select2-selection__rendered, .select2-container--default .select2-selection--single .select2-selection__placeholder {
         color: $scdMainClr;
@@ -19,9 +15,6 @@
           color: $scdMainClr;
         }
       }
-      .btn {
-        width: 100%;
-      }
     }
     &--intro {
       width: 100%;
@@ -29,18 +22,6 @@
       bottom: 0;
       z-index: 9;
       margin-bottom: 3rem;
-      &__row {
-        @extend %d-flex;
-        margin-left: -1.5rem;
-        margin-right: -1.5rem;
-      }
-      &__col {
-        width: 20%;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        @extend %d-flex;
-        align-items: flex-end;
-      }
     }
   }
   .carousel-item {
@@ -138,18 +119,24 @@
       }
     }
   }
+  .featured-cards {
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-bottom: 0;
+  }
 }
 
 .featured-cards {
   color: $whiteFontClr;
-  margin-left: .5rem;
-  margin-right: .5rem;
   padding: 1.2rem;
   @extend %d-flex;
   justify-content: space-between;
   align-items: flex-start;
   background-size: cover;
   background-position: center center;
+  height: 100%;
+  position: relative;
+  min-height: 18rem;
   &__list {
     width: calc(100% - 5rem - 1rem);
     margin-right: 1rem;
@@ -187,6 +174,9 @@
     position: absolute;
     top: 10%;
     #{$right}: 1.5rem;
+    img {
+      width: 100%;
+    }
   }
 }
 .circle-img {

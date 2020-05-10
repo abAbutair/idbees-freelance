@@ -21,5 +21,6 @@ a {
   color: $scdFontClr;
   font-size: $headingPrimary;
   font-weight: 300;
+  text-transform: capitalize;
 }
 .heading-secondary {}

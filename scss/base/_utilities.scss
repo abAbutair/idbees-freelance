@@ -10,4 +10,17 @@ p{
     &--padding {
         padding: $secPadding 0;
     }
+    &--grayBG {
+        background-color: $dropdownBG;
+    }
+}
+.vertical-img {
+    overflow: hidden;
+    margin-bottom: 2rem;
+    padding: 0 1.5rem;
+    img {
+        max-width: 100%;
+        display: block;
+        height: auto;
+    }
 }

@@ -16,13 +16,13 @@ ul {
     @include border-radius(50%);
     border: 1px solid $grayFontClr;
     font-size: $headingPrimary;
+    @include transition(all, .3s);
     a {
       width: 100%;
       height: 100%;
       @extend %d-flex;
       justify-content: center;
       align-items: center;
-
     }
     i {
       margin: 0;

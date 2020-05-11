@@ -190,3 +190,20 @@ label {
   background-color: $scdFontClr;
   border: 1px solid $scdFontClr;
 }
+
+.favourite {
+  &--added {
+    i {
+      &:before {
+        font-weight: 900;
+      }
+    }
+  }
+  &:hover {
+    i {
+      &:before {
+        font-weight: 900;
+      }
+    }
+  }
+}

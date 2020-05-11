@@ -24,3 +24,67 @@ p{
         height: auto;
     }
 }
+.grid-to-hide {
+    &--even {
+        > .row > [class^="col-"] {
+            &:not(:nth-child(-n+8)) {
+                visibility: hidden;
+                height: 0;
+                opacity: 0;
+                @include transition(all, .3s);
+                margin-bottom: 0;
+            }
+        }
+    }
+    &--odd {
+        > .row > [class^="col-"] {
+            &:not(:nth-child(-n+9)) {
+                visibility: hidden;
+                height: 0;
+                opacity: 0;
+                @include transition(all, .3s);
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__visible {
+        > .row > [class^="col-"] {
+            &:not(:nth-child(-n+9)), &:not(:nth-child(-n+8)) {
+                visibility: visible;
+                opacity: 1;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+    &__btn {
+        @extend %d-flex;
+        justify-content: center;
+        align-items: center;
+        .btn {
+            padding: 1rem 3rem;
+        }
+    }
+}
+.back-to-top {
+    position: fixed;
+    bottom: .8rem;
+    #{$right}: .8rem;
+    .btn {
+        background-color: $secondClr;
+        color: $whiteClr;
+        font-size: $medFontSize;
+        line-height: 1rem;
+        padding: 1.5rem;
+        visibility: hidden;
+        opacity: 0;
+        i {
+            line-height: 1rem;
+            margin: 0;
+        }
+        &.show {
+            visibility: visible;
+            opacity: 1;
+
+        }
+    }
+}

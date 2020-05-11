@@ -33,9 +33,11 @@
 //-------------//
 .fields {
   padding: 3rem 0;
+  > .row > [class^="col-"] {
+    margin-bottom: 3rem;
+  }
   &__inner {
     @extend %d-flex;
-    margin-bottom: 3rem;
     &--blueFC {
       .fields__img {
         i {
@@ -316,7 +318,7 @@
 
 .cards-wrapper {
   > .row > [class^="col-"] {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 }
 .featured-cards {
@@ -349,11 +351,16 @@
   }
 }
 .social-cards {
+  &:hover {
+    border: .1rem solid $mainClr;
+  }
   @extend %d-flex;
   justify-content: space-between;
   align-items: center;
   border: .1rem solid $whiteClr;
   padding: 0.5rem;
+  @include border-radius(.2rem);
+  @include transition(all, 0.3s);
   &__img {
     width: 3rem;
     height: 3rem;
@@ -385,35 +392,15 @@
     @include border-radius(.3rem)
   }
 }
-.grid-to-hide {
-  > .row > [class^="col-"] {
-    &:not(:nth-child(-n+8)) {
-      visibility: hidden;
-      height: 0;
-      opacity: 0;
-      @include transition(all, .3s);
-    }
-  }
-  &__visible {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  &__btn {
-    @extend %d-flex;
-    justify-content: center;
-    align-items: center;
-    .btn {
-      padding: 1rem 3rem;
-    }
-  }
-}
 
 /***************************************/
 
 .products {
+  > .row > [class^="col-"] {
+    margin-bottom: 3rem;
+  }
   &__inner {
     border: 1px solid $dropdownBG;
-    margin-bottom: 3rem;
     &:hover {
       .products__dis {
         background-color: $productHover;
@@ -465,6 +452,133 @@
     }
     .price {
       font-size: $headingPrimary;
+    }
+  }
+}
+/***************************************/
+
+.sites-item {
+  margin-left: .5rem;
+  margin-right: .5rem;
+  &__site {
+    position: relative;
+    .favourite {
+      position: absolute;
+      top: 0;
+      #{$left}: 0;
+      border: none;
+      padding: 0.3rem;
+      color: $mainClr;
+      i {
+        margin: 0;
+      }
+    }
+    &:not(:last-of-type) {
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__img {
+    padding: 0 2.5rem;
+    margin-bottom: 1rem;
+    a {
+      display: block;
+      max-width: 100%;
+      padding-top: 100%;
+      @include border-radius(50%);
+      overflow: hidden;
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+  &__dis {
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
+/*********************latest-news******************/
+.latest-news {
+  &__flex {
+    @extend %d-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+  }
+  &__inner {
+    width: 100%;
+    background-color: $dropdownBG;
+    &:not(:last-of-type) {
+      margin-bottom: 1.5rem;
+    }
+    &--h {
+      display: flex;
+      padding: 1.2rem;
+      align-items: center;
+      .latest-news__img {
+        padding-top: 0;
+        width: 12rem;
+        height: 8rem;
+        margin-#{$right}: 1rem;
+      }
+      .latest-news__dis {
+        position: relative;
+        width: calc(100% - 12rem - 1rem);
+        padding: 0;
+        h3 {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          line-height: 1.8rem;
+          a {
+            font-size: $tinyFontSize;
+          }
+        }
+        .seen-by {
+          bottom: 0;
+          #{$right}: 0;
+        }
+      }
+    }
+  }
+  &__img {
+    display: block;
+    padding-top: 70%;
+    background-size: cover;
+    background-position: center center;
+  }
+  &__dis {
+    background-color: $dropdownBG;
+    padding: 1.2rem;
+    position: relative;
+    h3, p {
+      margin: 0;
+    }
+    h3 {
+      a {
+        font-size: $medFontSize;
+      }
+    }
+    p {
+      font-size: $tinyFontSize;
+      a {
+        font-size: $tinyFontSize;
+      }
+    }
+    i {
+      color: $mainClr;
+    }
+    > * {
+      &:not(:last-of-type) {
+        margin-bottom: 0.8rem;
+      }
+    }
+    .seen-by {
+      position: absolute;
+      bottom: 1.2rem;
+      #{$right}: 1.2rem;
+      margin: 0;
     }
   }
 }

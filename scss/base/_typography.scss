@@ -23,4 +23,9 @@ a {
   font-weight: 300;
   text-transform: capitalize;
 }
-.heading-secondary {}
+.heading-secondary {
+  color: $thirdFontClr;
+  font-size: $headingPrimary;
+  font-weight: 500;
+  text-transform: capitalize;
+}

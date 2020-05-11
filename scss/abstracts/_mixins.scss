@@ -122,6 +122,13 @@
     -o-transform: translate( $x, $y);
     transform: translate( $x, $y);
 }
+@mixin translateImportant($x, $y) {
+    -webkit-transform: translate( $x, $y) !important;
+    -moz-transform: translate( $x, $y) !important;
+    -ms-transform: translate( $x, $y) !important;
+    -o-transform: translate( $x, $y) !important;
+    transform: translate( $x, $y) !important;
+}
 
 @mixin transition($property, $speed)  {
     -webkit-transition: ($property) ($speed);

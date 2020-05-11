@@ -1,5 +1,15 @@
 /*@abdulrahmanAbutair_mainStyle*/
 ////////////////////////////////////////
+header {
+  background-color: $whiteClr;
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 800;
+  }
+}
 .header-top {
   &__inner {
     @extend %d-flex;

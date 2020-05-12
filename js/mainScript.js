@@ -1,6 +1,5 @@
 /*@abdulrahmanAbutair_mainJS*/
 ////////////////////////////////////////
-
 /*****************************************************
 * (show / hide fields) on grid system (rows/cols)
 * */
@@ -45,6 +44,7 @@ $(function () {
         },
         allowPageScroll: "vertical",
         threshold: 10,
+        excludedElements: ".select2-selection, .select2-dropdown, .custom-container, .custom-dropdown, form, input, textarea, select, button, fieldset, label, datalist, output, legend, optgroup"
     });
 });
 /****************************************/
@@ -104,5 +104,4 @@ $(function () {
         e.preventDefault();
         $('html, body').animate({scrollTop:0}, '300');
     });
-
 })();

@@ -2384,6 +2384,7 @@
         <i class="fas fa-angle-up"></i>
     </button>
 </div>
+
 <!-- Modals -->
 <!-- Login Modal -->
 <div class="modal-login modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -2569,8 +2570,7 @@
 
 <!-- core scripts -->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
-<!--<script src="node_modules/popper.js/dist/popper.min.js"></script>-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
 
 <!-- Custom bootstrap scripts -->
 <script src="node_modules/bootstrap/js/dist/util.js"></script>
@@ -2582,9 +2582,10 @@
 <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
 <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
 <script src="node_modules/wowjs/dist/wow.min.js"></script>
-<script type="text/javascript" src="node_modules/jquery-touchswipe/jquery.touchSwipe.min.js"></script>
+<script src="node_modules/jquery-touchswipe/jquery.touchSwipe.min.js"></script>
 
 <!-- init scripts -->
+<!-- Select2 init script -->
 <script>
     $(document).ready(function () {
         $('.services').select2({
@@ -2611,9 +2612,13 @@
         });
     });
 </script>
+
+<!-- WowJs init script -->
 <script>
     new WOW().init();
 </script>
+
+<!-- Owl Carousel init script -->
 <script>
     $(document).ready(function(){
         $(".owl-cards").owlCarousel({
@@ -2656,6 +2661,5 @@
 
 <!-- Main scripts -->
 <script src="js/mainScript.js"></script>
-
 </body>
 </html>

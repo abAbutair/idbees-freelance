@@ -54,7 +54,6 @@
 // Utils
 @import "abstracts/variables";
 @import "abstracts/translate";
-@import "abstracts/function";
 @import "abstracts/mixins";
 @import "abstracts/partials";
 
@@ -68,7 +67,6 @@
 
 
 // Base
-//@import "base/animation";
 @import "base/fonts";
 @import "base/reset";
 @import "base/typography";
@@ -78,22 +76,17 @@
 @import "themes/default";
 
 // Components
-//@import "components/accordion";
 @import "components/buttons-links";
 @import "components/carousel";
 @import "components/dropdown";
 @import "components/forms";
 @import "components/lists";
 @import "components/modals";
-//@import "components/intro-grid";
-//@import "components/nav";
-//@import "components/side-nav";
 
 // Layout
 @import "layout/container";
 @import "layout/header";
 @import "layout/footer";
-@import "layout/navigation";
 
 
 // Pages

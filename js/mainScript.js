@@ -3,27 +3,66 @@
 /*****************************************************
 * (show / hide fields) on grid system (rows/cols)
 * */
+let switchLang = document.getElementById('switchLang');
 (function () {
-    let fieldsBtn = $('.grid-to-hide__btn');
-    fieldsBtn.click( function () {
-
-        let fieldsHideWrapper = $(this).closest('.grid-to-hide'),
-            fieldsHideEven = $(this).closest('.grid-to-hide--even').children('.row').children('[class^="col-"]:not(:nth-child(-n+8))'),
-            fieldsHideOdd = $(this).closest('.grid-to-hide--odd').children('.row').children('[class^="col-"]:not(:nth-child(-n+9))'),
-            fieldsHideHeight = $(this).closest('.grid-to-hide').children('.row').children('[class^="col-"]').outerHeight(),
-            fieldsBtnSpan = $(this).children('span');
-
-        fieldsHideWrapper.toggleClass('grid-to-hide__visible');
-
-        if (fieldsHideWrapper.hasClass('grid-to-hide__visible')) {
-            fieldsBtnSpan.text('less');
-            fieldsHideEven.css({'height': fieldsHideHeight + 'px'});
-            fieldsHideOdd.css({'height': fieldsHideHeight + 'px'});
-        } else {
-            fieldsBtnSpan.text('more');
-            fieldsHideEven.css({'height': '0'});
-            fieldsHideOdd.css({'height': '0'});
+    let nodeListForEach = function(list, callback) {
+        for (let i = 0; i < list.length; i++) {
+            callback(list[i], i);
         }
+    };
+    let fieldsBtn = $('.grid-to-hide__btn .btn');
+
+    nodeListForEach(fieldsBtn, function (curBtn) {
+
+        curBtn.addEventListener('click', function () {
+
+            let fieldsHideWrapper = $(this).closest('.grid-to-hide'),
+                fieldsHideEven = $(this).closest('.grid-to-hide--even').children('.row').children('[class^="col-"]:not(:nth-child(-n+8))'),
+                fieldsHideOdd = $(this).closest('.grid-to-hide--odd').children('.row').children('[class^="col-"]:not(:nth-child(-n+9))'),
+                fieldsBtnSpan = $(this).find('span'),
+                fieldsHideHeight = $(this).closest('.grid-to-hide').children('.row').children('[class^="col-"]').outerHeight();
+
+
+            nodeListForEach(fieldsHideWrapper, function (cur) {
+                cur.classList.toggle('grid-to-hide__visible');
+            });
+
+            if (fieldsHideWrapper.hasClass('grid-to-hide__visible')) {
+                nodeListForEach(fieldsHideEven, function (cur) {
+                    cur.style.height = fieldsHideHeight + 'px';
+                });
+                nodeListForEach(fieldsHideOdd, function (cur) {
+                    cur.style.height = fieldsHideHeight + 'px';
+                });
+                if (switchLang.getAttribute('href') === 'css/style_ltr.css') {
+                    nodeListForEach(fieldsBtnSpan, function (cur) {
+                        cur.textContent = 'less';
+                    });
+                } else if (switchLang.getAttribute('href') === 'css/style_rtl.css'){
+                    nodeListForEach(fieldsBtnSpan, function (cur) {
+                        cur.textContent = 'أقل';
+                    });
+                }
+
+            } else {
+                nodeListForEach(fieldsHideEven, function (cur) {
+                    cur.style.height = 0;
+                });
+                nodeListForEach(fieldsHideOdd, function (cur) {
+                    cur.style.height = 0;
+                });
+                if (switchLang.getAttribute('href') === 'css/style_ltr.css') {
+                    nodeListForEach(fieldsBtnSpan, function (cur) {
+                        cur.textContent = 'more';
+                    });
+                } else if (switchLang.getAttribute('href') === 'css/style_rtl.css'){
+                    nodeListForEach(fieldsBtnSpan, function (cur) {
+                        cur.textContent = 'أكثر';
+                    });
+                }
+            }
+        });
+
     });
 })();
 /****************************************/

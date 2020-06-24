@@ -1,0 +1,701 @@
+<!-- @ab-ab_html-->
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap & Plugins -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" id="switchLang" href="css/style_ltr.css">
+
+    <!-- icon & Title -->
+    <link rel="icon" href="https://idbees77.entej.com/assets/images/favicon.ico"
+          type="image/x-icon">
+    <title>IDbees</title>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top__inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="https://idbees77.entej.com/assets/images/logo/idbees-logo.png" alt="idbees Logo">
+                    </a>
+                </div>
+                <div class="register-lang">
+                    <ul class="d-flex">
+                        <li>
+                            <div class="dropdown dropdown--header">
+                                <button class="btn btn--dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-plus-circle"></i>
+                                    <span>new id it's free</span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="btn btn--dark" href="#">company</a>
+                                    <a class="btn btn--default" href="#">person</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- Button trigger Login modal -->
+                            <button type="button" class="btn btn--transparent" data-toggle="modal" data-target="#exampleModal">
+                                <i class="fas fa-lock"></i>
+                                <span>login</span>
+                            </button>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn--transparent">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>egypt</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn--transparent">
+                                <i class="fas fa-language"></i>
+                                <span>العربية</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <div class="header-bottom__inner">
+                <nav class="navbar">
+                    <div class="collapse-nav" id="navbarSupportedContent">
+                        <ul class="navbar__nav">
+                            <li class="nav-item">
+                                <a class="nav-link link link--mainClr" href="#">websites directory</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link link--mainClr" href="#">buy & sell</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link link--mainClr" href="#">ID'S</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar__nav">
+                            <li class="nav-item">
+                                <a class="nav-link btn btn--green" href="#">
+                                    <i class="fas fa-plus-circle"></i>
+                                    <span>add your website</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn--default" href="#">
+                                    <i class="fas fa-plus-circle"></i>
+                                    <span>add your product</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End of Header -->
+
+<!-- Main Content -->
+<main>
+    <section class="section section--padding">
+        <div class="register-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9">
+                        <form action="" class="form">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form__element label-stared validated">
+                                        <label>sub fields</label>
+                                        <select class="services" name="services">
+                                            <option value="0"></option>
+                                            <option value="articles">articles</option>
+                                            <option value="cards">cards</option>
+                                            <option value="our business">our business</option>
+                                            <option value="products">products</option>
+                                            <option value="sites">sites</option>
+                                        </select>
+
+                                        <!--                        <div class="validated-tooltip">-->
+                                        <!--                            Please provide a valid-->
+                                        <!--                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form__element label-stared validated">
+                                        <label>sub fields</label>
+                                        <select class="services" name="services">
+                                            <option value="0"></option>
+                                            <option value="articles">articles</option>
+                                            <option value="cards">cards</option>
+                                            <option value="our business">our business</option>
+                                            <option value="products">products</option>
+                                            <option value="sites">sites</option>
+                                        </select>
+
+                                        <!--                        <div class="validated-tooltip">-->
+                                        <!--                            Please provide a valid-->
+                                        <!--                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form__element validated">
+                                        <div class="radio">
+                                            <div class="custom-radio">
+                                                <input type="radio" class="custom-control-input" id="radio1" name="radio-stacked">
+                                                <label class="custom-control-label" for="radio1">working</label>
+                                            </div>
+                                            <div class="custom-radio">
+                                                <input type="radio" class="custom-control-input" id="radio2" name="radio-stacked">
+                                                <label class="custom-control-label" for="radio2">not working</label>
+                                            </div>
+                                        </div>
+                                        <!--                        <div class="validated-tooltip">-->
+                                        <!--                            Please provide a valid-->
+                                        <!--                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form__element validated">
+                                        <label for="input00">input field</label>
+                                        <input type="text" class="input" placeholder="..." id="input00">
+                                        <!--                        <div class="validated-tooltip">-->
+                                        <!--                            Please provide a valid-->
+                                        <!--                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form__element validated">
+                                        <label for="input01">input field</label>
+                                        <input type="text" class="input" placeholder="..." id="input01">
+                                        <!--                        <div class="validated-tooltip">-->
+                                        <!--                            Please provide a valid-->
+                                        <!--                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form__element label-stared validated">
+                                        <label>sub fields</label>
+                                        <select class="services" name="services">
+                                            <option value="0"></option>
+                                            <option value="articles">articles</option>
+                                            <option value="cards">cards</option>
+                                            <option value="our business">our business</option>
+                                            <option value="products">products</option>
+                                            <option value="sites">sites</option>
+                                        </select>
+
+                                        <!--                        <div class="validated-tooltip">-->
+                                        <!--                            Please provide a valid-->
+                                        <!--                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form__element label-stared validated">
+                                        <label>sub fields</label>
+                                        <select class="services" name="services">
+                                            <option value="0"></option>
+                                            <option value="articles">articles</option>
+                                            <option value="cards">cards</option>
+                                            <option value="our business">our business</option>
+                                            <option value="products">products</option>
+                                            <option value="sites">sites</option>
+                                        </select>
+
+                                        <!--                        <div class="validated-tooltip">-->
+                                        <!--                            Please provide a valid-->
+                                        <!--                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form__element label-stared validated">
+                                        <label>sub fields</label>
+                                        <select class="services" name="services">
+                                            <option value="0"></option>
+                                            <option value="articles">articles</option>
+                                            <option value="cards">cards</option>
+                                            <option value="our business">our business</option>
+                                            <option value="products">products</option>
+                                            <option value="sites">sites</option>
+                                        </select>
+
+                                        <!--                        <div class="validated-tooltip">-->
+                                        <!--                            Please provide a valid-->
+                                        <!--                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="form__element validated">
+                                        <label for="input02">input field</label>
+                                        <input type="text" class="input" placeholder="..." id="input02">
+                                        <!--                        <div class="validated-tooltip">-->
+                                        <!--                            Please provide a valid-->
+                                        <!--                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form__element label-stared validated">
+                                        <label>sub fields</label>
+                                        <select class="services" name="services">
+                                            <option value="0"></option>
+                                            <option value="articles">articles</option>
+                                            <option value="cards">cards</option>
+                                            <option value="our business">our business</option>
+                                            <option value="products">products</option>
+                                            <option value="sites">sites</option>
+                                        </select>
+
+                                        <!--                        <div class="validated-tooltip">-->
+                                        <!--                            Please provide a valid-->
+                                        <!--                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form__element label-stared validated">
+                                        <label>sub fields</label>
+                                        <select class="services" name="services">
+                                            <option value="0"></option>
+                                            <option value="articles">articles</option>
+                                            <option value="cards">cards</option>
+                                            <option value="our business">our business</option>
+                                            <option value="products">products</option>
+                                            <option value="sites">sites</option>
+                                        </select>
+
+                                        <!--                        <div class="validated-tooltip">-->
+                                        <!--                            Please provide a valid-->
+                                        <!--                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form__element label-stared validated">
+                                        <label>sub fields</label>
+                                        <select class="services" name="services">
+                                            <option value="0"></option>
+                                            <option value="articles">articles</option>
+                                            <option value="cards">cards</option>
+                                            <option value="our business">our business</option>
+                                            <option value="products">products</option>
+                                            <option value="sites">sites</option>
+                                        </select>
+
+                                        <!--                        <div class="validated-tooltip">-->
+                                        <!--                            Please provide a valid-->
+                                        <!--                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form__element label-stared validated">
+                                        <label>sub fields</label>
+                                        <select class="services" name="services">
+                                            <option value="0"></option>
+                                            <option value="articles">articles</option>
+                                            <option value="cards">cards</option>
+                                            <option value="our business">our business</option>
+                                            <option value="products">products</option>
+                                            <option value="sites">sites</option>
+                                        </select>
+
+                                        <!--                        <div class="validated-tooltip">-->
+                                        <!--                            Please provide a valid-->
+                                        <!--                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form__element validated">
+                                        <label for="input04">input field</label>
+                                        <input type="text" class="input" placeholder="..." id="input04">
+                                        <!--                        <div class="validated-tooltip">-->
+                                        <!--                            Please provide a valid-->
+                                        <!--                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form__element validated">
+                                        <label for="input05">input field</label>
+                                        <input type="text" class="input" placeholder="..." id="input05">
+                                        <!--                        <div class="validated-tooltip">-->
+                                        <!--                            Please provide a valid-->
+                                        <!--                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form__element validated">
+                                        <div class="radio">
+                                            <div class="custom-radio">
+                                                <input type="radio" class="custom-control-input" id="radio3" name="radio-stacked">
+                                                <label class="custom-control-label" for="radio3">show</label>
+                                            </div>
+                                            <div class="custom-radio">
+                                                <input type="radio" class="custom-control-input" id="radio4" name="radio-stacked">
+                                                <label class="custom-control-label" for="radio4">hide</label>
+                                            </div>
+                                        </div>
+                                        <!--                        <div class="validated-tooltip">-->
+                                        <!--                            Please provide a valid-->
+                                        <!--                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form__element label-stared">
+                                        <label for="input05">Date of birth</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form__element validated">
+                                        <label>sub fields</label>
+                                        <select class="services" name="services">
+                                            <option value="0"></option>
+                                            <option value="articles">articles</option>
+                                            <option value="cards">cards</option>
+                                            <option value="our business">our business</option>
+                                            <option value="products">products</option>
+                                            <option value="sites">sites</option>
+                                        </select>
+
+                                        <!--                        <div class="validated-tooltip">-->
+                                        <!--                            Please provide a valid-->
+                                        <!--                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form__element validated">
+                                        <label>sub fields</label>
+                                        <select class="services" name="services">
+                                            <option value="0"></option>
+                                            <option value="articles">articles</option>
+                                            <option value="cards">cards</option>
+                                            <option value="our business">our business</option>
+                                            <option value="products">products</option>
+                                            <option value="sites">sites</option>
+                                        </select>
+
+                                        <!--                        <div class="validated-tooltip">-->
+                                        <!--                            Please provide a valid-->
+                                        <!--                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form__element validated">
+                                        <label>sub fields</label>
+                                        <select class="services" name="services">
+                                            <option value="0"></option>
+                                            <option value="articles">articles</option>
+                                            <option value="cards">cards</option>
+                                            <option value="our business">our business</option>
+                                            <option value="products">products</option>
+                                            <option value="sites">sites</option>
+                                        </select>
+
+                                        <!--                        <div class="validated-tooltip">-->
+                                        <!--                            Please provide a valid-->
+                                        <!--                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form__element validated">
+                                        <label for="file-upload">profile pic</label>
+                                        <input type="file" class="input input--upload" id="file-upload">
+
+                                        <!--                        <div class="validated-tooltip">-->
+                                        <!--                            Please provide a valid-->
+                                        <!--                        </div>-->
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form__element validated">
+                                        <label for="file-upload02">profile pic</label>
+                                        <input type="file" class="input input--upload" id="file-upload02">
+
+                                        <!--                        <div class="validated-tooltip">-->
+                                        <!--                            Please provide a valid-->
+                                        <!--                        </div>-->
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form__element ">
+                                        <button type="submit" class="btn btn--default">see your card</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-xl-3">
+                        <aside class="inform-aside">
+                            <h5 class="heading-primary">Lorem ipsum dolor sit amet?</h5>
+                            <article>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi architecto aspernatur, autem dignissimos eligendi fugit impedit mollitia, natus, neque officia porro praesentium reprehenderit tenetur ullam ut veritatis. Minima, ratione.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi architecto aspernatur, autem dignissimos eligendi fugit impedit mollitia.</p>
+                            </article>
+                            <div class="aside-img">
+                                <img src="https://funzillapa.com/wp-content/uploads/2016/04/dummy-post-vertical-1.jpg" alt="">
+                            </div>
+                            <div class="featured-cards" style="background-image: url(http://idbees77.entej.com/assets/images/cards/FOD1O2J.jpg)">
+                                <ul class="featured-cards__list">
+                                    <li>
+                                        <a href="#" class="card-link card-heading">
+                                            <i class="fas fa-id-card-alt"></i>
+                                            <span>201480953998</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="card-name">
+                                            <i class="fas fa-user"></i>
+                                            <span>EgyNozom</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card-name">
+                                            <i class="fas fa-graduation-cap"></i>
+                                            <span>Health services</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card-name">
+                                            <i class="fas fa-suitcase"></i>
+                                            <span>Mouth and dentistry</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="tel:" class="card-link">
+                                            <i class="fas fa-phone-square-alt"></i>
+                                            <span>0213456789</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="card-name">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span>Des1- Dubai, United Arab Emirates</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="featured-cards__img">
+                                    <div class="circle-img">
+                                        <img src="http://idbees77.entej.com/assets/images/companies_logos/facebook_circle-128.png"
+                                             alt="card image">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- End of Main Content -->
+
+<!-- Footer -->
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-content">
+                        <div class="footer-logo">
+                            <img src="http://idbees77.entej.com/assets/images/logo/logo_red_footer.png" alt="Footer Logo">
+                        </div>
+                        <p>Mauris dolor sapien, malesuada at interdum ut Mauris dolor sapien, malesuada at interdum ut</p>
+                        <ul class="social-links">
+                            <li class="facebook" style="background-color: #3b5998; border-color: #3b5998"><a target="_blank" style="color: #fff;" href="http://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="twitter" style="background-color: #55acee; border-color: #55acee"><a target="_blank" style="color: #fff;" href="http://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                            <li class="skype" style="background-color: #00aff0; border-color: #00aff0"><a target="_blank" style="color: #fff;" href="http://www.skype.com/"><i class="fab fa-skype"></i></a></li>
+                            <li class="linkedin" style="background-color: #0976b4; border-color: #0976b4"><a target="_blank" style="color: #fff;" href="http://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li class="youtube" style="background-color: #b31217; border-color: #b31217"><a target="_blank" style="color: #fff;" href="http://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                            <li class="flickr" style="background-color: #ff0084; border-color: #ff0084"><a target="_blank" style="color: #fff;" href="http://www.flickr.com/"><i class="fab fa-flickr"></i></a></li>
+                            <li class="pinterest" style="background-color: #cb2027; border-color: #cb2027"><a target="_blank" style="color: #fff;" href="http://www.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+                        </ul>
+                        <a href="#" class="link link--mainClr link--read-more"><span>Read more</span></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-2 offset-lg-1">
+                    <div class="footer-content">
+                        <h3 class="footer-heading">Links</h3>
+                        <nav>
+                            <ul class="footer-nav">
+                                <li><a href="#">Bloger</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Ads</a></li>
+                                <li><a href="#">Website Map</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="footer-content">
+                        <h3 class="footer-heading">Subscribe</h3>
+                        <form class="form">
+                            <!-- to trigger validation Error message put class 'validated' to form__element div -->
+                            <div class="form__element validated">
+                                <div class="field-with-icn">
+                                    <input type="email" class="input" placeholder="your email" id="subscribe">
+                                    <span class="field-with-icn__icon"><i class="fas fa-envelope"></i></span>
+                                </div>
+                                <!--                        <div class="validated-tooltip">-->
+                                <!--                            Please provide a valid-->
+                                <!--                        </div>-->
+                            </div>
+                            <div class="form__element">
+                                <button type="submit" class="btn btn--transparent">send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom__inner">
+                <p class="copyright">
+                    Copyright &copy; 2017 IDbees . All Rights Reserved
+                </p>
+                <ul class="navbar__nav">
+                    <li class="nav-item">
+                        <a class="nav-link link link--mainClr" href="#">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link link--mainClr" href="#">Websites Directory</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link link--mainClr" href="#">Buy & Sell</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link link--mainClr" href="#">Cards</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End of Footer -->
+
+<!-- Back to Top -->
+<div class="back-to-top">
+    <button type="button" class="btn btn--dark">
+        <i class="fas fa-angle-up"></i>
+    </button>
+</div>
+
+<!-- Modals -->
+<!-- Login Modal -->
+<div class="modal-login modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Login IDbees</h5>
+                <button type="button" class="close btn btn--default" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" class="form">
+                    <!-- to trigger validation Error message put class 'validated' to form__element div -->
+                    <h5 class="modal-heading">login</h5>
+                    <div class="form__element labeled validated">
+                        <label for="userName">user name</label>
+                        <div class="field-with-icn labeled__field">
+                            <input type="text" class="input" placeholder="user name" id="userName">
+                            <span class="field-with-icn__icon"><i class="fas fa-user"></i></span>
+                        </div>
+                        <!--                        <div class="validated-tooltip">-->
+                        <!--                            Please provide a valid-->
+                        <!--                        </div>-->
+                    </div>
+                    <div class="form__element labeled validated">
+                        <label for="password">password</label>
+                        <div class="field-with-icn labeled__field">
+                            <input type="password" class="input" placeholder="password" id="password">
+                            <span class="field-with-icn__icon"><i class="fas fa-lock"></i></span>
+                        </div>
+                        <!--                        <div class="validated-tooltip">-->
+                        <!--                            Please provide a valid-->
+                        <!--                        </div>-->
+                    </div>
+                    <div class="form__element alignment-margin validated">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">remember me</label>
+                        </div>
+                        <!--                        <div class="validated-tooltip">-->
+                        <!--                            Please provide a valid-->
+                        <!--                        </div>-->
+                    </div>
+                    <div class="form__element alignment-margin">
+                        <button type="submit" class="btn btn--default">login</button>
+                    </div>
+                    <div class="form__element alignment-margin">
+                        <a href="#" class="link link--mainClr"> forgot your password?</a>
+                    </div>
+                </form>
+                <p class="modal-footing">Don't have an account yet? <a href="#" class="link link--blue">new company ID</a> or <a href="#" class="link link--blue">new user ID</a> now</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Modals -->
+
+<!-- core scripts -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<!--<script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+<!-- Custom bootstrap scripts -->
+<script src="node_modules/bootstrap/js/dist/util.js"></script>
+<script src="node_modules/bootstrap/js/dist/modal.js"></script>
+<script src="node_modules/bootstrap/js/dist/dropdown.js"></script>
+
+<!-- Page plugins scripts -->
+<script src="node_modules/select2/dist/js/select2.full.min.js"></script>
+
+<!-- init scripts -->
+<!-- Select2 init script -->
+<script>
+    $(document).ready(function () {
+        $('.services').select2({
+            placeholder: {
+                id: '0', // the value of the option
+                text: 'Select an option'
+            },
+            minimumResultsForSearch: -1,
+            dropdownAutoWidth: true,
+            width: '100%',
+            containerCssClass: "custom-container",
+            dropdownCssClass: "custom-dropdown",
+        });
+        $('.city').select2({
+            placeholder: {
+                id: '0', // the value of the option
+                text: 'choose city'
+            },
+            minimumResultsForSearch: -1,
+            dropdownAutoWidth: true,
+            width: '100%',
+            containerCssClass: "custom-container",
+            dropdownCssClass: "custom-dropdown",
+        });
+    });
+</script>
+
+<!-- Main scripts -->
+<script src="js/mainScript.js"></script>
+</body>
+</html>

@@ -3,18 +3,19 @@
 .form {
   &__element {
     margin-bottom: 1.5rem;
+    label {
+      text-transform: capitalize;
+      margin-bottom: 0.5rem;
+      font-size: $smallFontSize;
+      font-weight: bold;
+      margin-#{$left}: 0.3rem;
+    }
   }
   &--intro {
     margin-bottom: 3rem;
     .form__element {
       width: 100%;
       margin-bottom: 0;
-    }
-    label {
-      text-transform: capitalize;
-      font-size: $smallFontSize;
-      font-weight: bold;
-      margin-bottom: 0.5rem;
     }
     &__row {
       @extend %d-flex;
@@ -65,6 +66,11 @@
     border-color: transparent;
     border-bottom: 1px solid $mainClr;
   }
+  &--upload {
+    border: none;
+    padding: 0;
+    height: auto;
+  }
 }
 
 textarea{
@@ -81,7 +87,38 @@ textarea{
 label {
   margin-bottom: 0;
 }
-
+.label-stared {
+  label {
+    position: relative;
+    &:after {
+      content: '\f005';
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      color: red;
+      position: absolute;
+      top: 0;
+      #{$right}: -1.2rem;
+      font-size: .6rem;
+    }
+  }
+}
+///////////////////////////
+.radio {
+  @extend %d-flex;
+  margin-#{$left}: 1.5rem;
+  .custom-radio {
+    &:not(:last-child) {
+      margin-#{$right}: 3rem;
+    }
+  }
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: $mainClr;
+  }
+  .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+    background-image: none;
+  }
+}
+////////////////////////
 .labeled {
   @extend %d-flex;
   justify-content: space-between;

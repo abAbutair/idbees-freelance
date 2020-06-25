@@ -12,6 +12,9 @@
   .btn {
     @include border-radius(0);
   }
+  .dropdown--header {
+    align-self: flex-end;
+  }
 }
 
 /***************************************/

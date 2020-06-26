@@ -1,5 +1,4 @@
 #introCarousel {
-
   .form {
     &__element {
       margin-bottom: 0;
@@ -26,6 +25,8 @@
   }
   .carousel-item {
     height: 500px;
+    background-position: center;
+    background-size: cover;
     &:after {
       content: ' ';
       display: block;

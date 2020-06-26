@@ -144,4 +144,33 @@ $(function () {
         $('html, body').animate({scrollTop:0}, '300');
     });
 })();
+/****************************************/
+
+/*****************************************************
+ * navbar open under width 992px
+ * */
+{
+    const domVars = {
+        navbar: document.querySelector('.header-bottom'),
+        openBtn: document.querySelector('#openNav'),
+        closeBtn: document.querySelector('#closeNav')
+    }
+    domVars.openBtn.addEventListener('click', () => {
+        domVars.navbar.classList.toggle('show');
+    });
+    domVars.closeBtn.addEventListener('click', () => {
+       domVars.navbar.classList.remove('show');
+    });
+
+    // click on body except the drop will close the drop
+    document.addEventListener("click", e => {
+
+        // If user clicks inside the element, do nothing
+        if (e.target.closest("header")) return;
+
+        // If user clicks outside the element, hide it!
+        domVars.navbar.classList.remove('show');
+
+    });
+}
 

@@ -13,6 +13,9 @@ p{
         background-color: $dropdownBG;
     }
 }
+.horizontal-img {
+    display: none;
+}
 .vertical-img {
     overflow: hidden;
     margin-bottom: 2rem;
@@ -24,6 +27,7 @@ p{
     }
 }
 .grid-to-hide {
+
     &--even {
         > .row > [class^="col-"] {
             &:not(:nth-child(-n+8)) {

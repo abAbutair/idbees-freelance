@@ -6,3 +6,20 @@
 //    width: 100%;
 //  }
 //}
+
+.register-page {
+  &--person {
+    .form {
+      border: .1rem solid $dropdownBG;
+      padding: 2rem;
+      @include border-radius(0.6rem);
+    }
+    &__heading {
+      text-transform: capitalize;
+      font-size: $megaHeading;
+      font-weight: 300;
+      border-bottom: .1rem solid $dropdownBG;
+      margin-bottom: 1.5rem;
+    }
+  }
+}

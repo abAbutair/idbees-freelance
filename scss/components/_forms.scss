@@ -34,6 +34,14 @@
       height: 4rem;
     }
   }
+  .alignment-margin {
+    margin-#{$left}: calc(11rem + 1rem);
+  }
+  .sign-with {
+    border-top: .1rem solid $dropdownBG;
+    padding-top: 1.5rem;
+  }
+
 }
 .input, .select2-container--default .custom-container , .select2-container--default .select2-selection--multiple{
   height: $formElementHeight;

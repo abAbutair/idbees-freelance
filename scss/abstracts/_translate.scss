@@ -5,7 +5,6 @@
 /*----- Translate Variables -----*/
 $isRtl: ltr;
 
-
 //directions -------
 $left: left;
 $right: right;
@@ -22,7 +21,7 @@ $angel-left:"\f104";
 $angel-right:"\f105"; //used in En
 
 ////font family ------
-//$bodyFont: 'roboto-reg';
+$bodyFont: 'cairo-reg';
 //$boldFont: 'roboto-bold';
 //$semiBoldFont: 'roboto-semi';
 //$medFont: 'roboto-med';
@@ -46,7 +45,7 @@ $angel-right:"\f105"; //used in En
     $angel-right:"\f104";
 
     ////font family ------
-    //$bodyFont: 'messiri-reg';
+    $bodyFont: 'cairo-reg';
     //$boldFont: 'messiri-bold';
     //$semiBoldFont: 'messiri-semi';
     //$medFont: 'messiri-med';
@@ -69,7 +68,7 @@ $angel-right:"\f105"; //used in En
     $angel-right:"\f105";
 
     ////font family ------
-    //$bodyFont: 'roboto-reg';
+    $bodyFont: 'cairo-reg';
     //$boldFont: 'roboto-bold';
     //$semiBoldFont: 'roboto-semi';
     //$medFont: 'roboto-med';

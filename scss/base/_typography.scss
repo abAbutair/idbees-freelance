@@ -1,13 +1,10 @@
 /*@abdulrahmanAbutair_mainStyle*/
 ////////////////////////////////////////
 body {
-  font-family: 'cairo', sans-serif, "Helvetica Neue", Helvetica, Arial;
+  font-family: $bodyFont;
   font-weight: 400;
-
-  //line-height: var(--h);
   color: $bodyFontClr;
   font-size: $bodyFontSize;
-  //word-spacing: 0.15rem;
   text-align: $left;
 }
 i {
